@@ -1,0 +1,1 @@
+token=$(tr -dc A-Za-z0-9 </dev/urandom | head -c 48 ; echo '') && sudo sh -c 'qr "'$token'" > /usr/share/hassio/media/token.png' && curl -X POST -H "Authorization: Bearer <your-API-TOKEN>" -H "Content-Type: application/json" -d '{"state":"'$token'"}' http://homeassistant.local:8123/api/states/input_text.qr_code_text
