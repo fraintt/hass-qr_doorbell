@@ -7,6 +7,7 @@ This is a short description about a solution I created for myself in order to le
 Requirements: 
 - Video Doorbell, with camera feed in HomeAssistant (camera Entity in HASS)
 - Magnetic or Automatic Gate controlled by HASS (I have tasmota-relay wired into my automatic gate which "pushes" the button for the gate to open)
+-  QR Installed on the System where the qr_generate.sh will be run. (https://pypi.org/project/qrcode/)
 
 Helpers: 
  - input_text.qr_code_text
